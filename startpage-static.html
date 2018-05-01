@@ -98,157 +98,60 @@
 				</form>
 			</section>
 		</article>
-		<article id="main"></article>
-		<script type="text/javascript">
-			const _ = [
-				{
-					"id": "work",
-					"_": [{
-						"url": "https://mail.google.com/mail/u/0/#inbox",
-						"lbl": "mail"
-					},{
-						"url": "https://slack.com/messages/XXXXXX/",
-						"lbl": "chat"
-					},{
-						"url": "https://calendar.google.com/calendar/b/0/render",
-						"lbl": "calendar"
-					},{
-						"url": "https://github.com",
-						"lbl": "code"
-					},{
-						"url": "https://gitlab.com",
-						"lbl": "mirror"
-					}]
-				},{
-					"id": "timesink",
-					"_": [{
-						"url": "https://www.reddit.com/r/unixporn",
-						"lbl": "unixporn",
-					},{
-						"url": "https://www.reddit.com/r/vim",
-						"lbl": "vim",
-					},{
-						"url": "https://pc.textmod.es",
-						"lbl": "textmod.es",
-					},{
-						"url": "http://home.ekosystem.org",
-						"lbl": "ekosystem",
-					},{
-						"url": "https://tshirtslayer.com",
-						"lbl": "battlejackets",
-					}]
-				},{
-					"id": "social",
-					"_": [{
-						"url": "https://nixers.net",
-						"lbl": "nixers",
-					},{
-						"url": "https://facebook.com",
-						"lbl": "koobface",
-					},{
-						"url": "https://twitter.com",
-						"lbl": "twooper",
-					},{
-						"url": "https://mastodon.social",
-						"lbl": "mastodon",
-					},{
-						"url": "http://cyberia.is",
-						"lbl": "cyberia"
-					}]
-				},{
-					"id": "friends",
-					"_": [{
-						"url": "http://z3bra.org",
-						"lbl": "z3bra",
-					},{
-						"url": "https://lyngvaer.no",
-						"lbl": "dcat",
-					},{
-						"url": "http://venam.nixers.net",
-						"lbl": "venam",
-					},{
-						"url": "https://pluvi.us",
-						"lbl": "apk",
-					},{
-						"url": "https://neeasade.net",
-						"lbl": "neeasade",
-					},{
-						"url": "https://mrdoob.com",
-						"lbl": "mr.doob",
-					},{
-						"url": "https://soulwire.co.uk",
-						"lbl": "soulwire",
-					},{
-						"url": "http://zehfernando.com",
-						"lbl": "zeh"
-					}]
-				},{
-					"id": "personal hype",
-					"_": [{
-						"url": "http://xero.nu",
-						"lbl": "xero.nu",
-					},{
-						"url": "http://0w.nz",
-						"lbl": "0w.nz",
-					},{
-						"url": "http://fontvir.us",
-						"lbl": "fontvir.us",
-					},{
-						"url": "https://twitter.com/fontvirus",
-						"lbl": "@fontvirus",
-					},{
-						"url": "https://keybase.io/xero",
-						"lbl": "keybase"
-					}]
-				}
-			];
-			const $ = function $ (selector, context = document) {
-				const elements = Array.from(context.querySelectorAll(selector))
-				return {
-					elements,
-					clear() {
-						this.elements.forEach(element => {
-							element.innerHTML = ""
-						})
-						return this
-					},
-					html(newHtml) {
-						this.elements.forEach(element => {
-							element.innerHTML += newHtml
-						})
-						return this
-					},
-					css(newCss) {
-						this.elements.forEach(element => {
-							Object.assign(element.style, newCss)
-						})
-						return this
-					},
-					focus() {
-						context.querySelector(selector).focus();
-						return this
-					},
-					val() {
-						return context.querySelector(selector).value
-					}
-				}
-			};
-			function build(j) {
-				for(const x of j) {
-					let node = `<section><h1>${x.id}</h1><ul>`;
-					for(const l of x._) {
-						if(!l.hidden) {
-							node += `<li><a href="${l.url}">${l.lbl}</a></li>`
-						}
-					}
-					node += `</ul></section>`;
-					$("#main").html(node);
-				}
-			}
-			(() => {
-				build(_);
-				$("#find").focus();
-			})();
-		</script>
+		<article id="main">
+			<section>
+				<h1>work</h1>
+				<ul>
+					<li><a href="https://mail.google.com/mail/u/0/#inbox">mail</a></li>
+					<li><a href="https://slack.com/messages/XXXXXX/">chat</a></li>
+					<li><a href="https://calendar.google.com/calendar/b/0/render">cal</a></li>
+					<li><a href="https://github.com">code</a></li>
+					<li><a href="https://gitlab.com">mirror</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>timesink</h1>
+				<ul>
+					<li><a href="https://reddit.com/r/unixporn">unixporn</a></li>
+					<li><a href="https://reddit.com/r/vim">vim</a></li>
+					<li><a href="https://pc.textmod.es">textmod.es</a></li>
+					<li><a href="http://home.ekosystem.org">ekosystem</a></li>
+					<li><a href="https://tshirtslayer.com">battlejackets</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>social</h1>
+				<ul>
+					<li><a href="https://nixers.net">nixers</a></li>
+					<li><a href="https://facebook.com">koobface</a></li>
+					<li><a href="https://twitter.com">twooper</a></li>
+					<li><a href="https://mastodon.social">mastodon</a></li>
+					<li><a href="https://cyberia.is">cyberia</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>friends</h1>
+				<ul>
+					<li><a href="http://z3bra.org">z3bra</a></li>
+					<li><a href="https://lyngvaer.no">dcat</a></li>
+					<li><a href="http://venam.nixers.net">venam</a></li>
+					<li><a href="https://pluvi.us">apk</a></li>
+					<li><a href="https://neeasade.net">neeasade</a></li>
+					<li><a href="http://mrdoob.com/">mr. doob</a></li>
+					<li><a href="https://soulwire.co.uk">soulwire</a></li>
+					<li><a href="http://zehfernando.com">zeh</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>personal hype</h1>
+				<ul>
+					<li><a href="http://xero.nu">xero.nu</a></li>
+					<li><a href="http://0w.nz">0w.nz</a></li>
+					<li><a href="http://fontvir.us">fontvir.us</a></li>
+					<li><a href="http://twitter.com/fontvirus">@fontvirus</a></li>
+					<li><a href="http://keybase.io/xero">keybase</a></li>
+				</ul>
+			</section>
+		</article>
 	</body>
 </html>
