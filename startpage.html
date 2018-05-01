@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>x0's startpage</title>
+		<style type="text/css">
+			body {
+				background: #222;
+				color: #c0c0c0;
+				font-weight: normal;
+				margin: 1% 10%;
+			}
+			article {
+				display: flex;
+				flex-direction: row;
+				flex-flow: row wrap;
+				align-items: flex-start;
+			}
+			section {
+				background: -webkit-linear-gradient(top, #111 0%, #222 90%); 
+				flex: 1 0 20%;
+				padding: 20px;
+				text-align: left;
+				margin: 25px;
+			}
+			#search {
+				margin-bottom: 0px;
+			}
+			h1 {
+				color: #c0c0c0;
+				font-weight: normal;
+				font-size: 24pt;
+				margin: 0 0 20px 0;
+				padding: 0;
+			}
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width 100%;
+			}
+			li {
+				width 100%;
+				background: #222;
+				margin: 2px;
+				padding: 2px;
+			}
+			li a {
+				color: #5F8787;
+				display: block;
+				font-weight: normal;
+				margin: 0 0 0 2px;
+				text-decoration: none;
+				width: 100%;
+				font-size: 20pt;
+			}
+			li a:hover,
+			li a:focus {
+				background: #000;
+				outline: none;
+			}
+			li:hover,
+			li:focus {
+				background: #000;
+			}
+			input[type=text]:focus {
+				outline: none;
+				border: none;
+			}
+			input[type=text] {
+				outline: none;
+				border: none;
+				background: #222;
+				color: #c0c0c0;
+				width: 99%;
+				height: 50px;
+				padding: 5px 0px 5px 15px;
+				font-size: 20pt;
+				text-align: left;
+				margin-bottom: 30px;
+				-webkit-transition: all 0.30s ease-in-out;
+			}
+		</style>
+	</head>
+	<body>
+		<article>
+			<section id="search">
+				<form action="http://www.google.com/search" method="get" name="frmSearch">
+					<input type="text" id="find" name="q" placeholder="search..." autofocus>
+				</form>
+			</section>
+		</article>
+		<article id="main">
+			<section>
+				<h1>work</h1>
+				<ul>
+					<li><a href="https://mail.google.com/mail/u/0/#inbox">mail</a></li>
+					<li><a href="https://slack.com/messages/XXXXXX/">chat</a></li>
+					<li><a href="https://calendar.google.com/calendar/b/0/render">cal</a></li>
+					<li><a href="https://github.com">code</a></li>
+					<li><a href="https://gitlab.com">mirror</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>timesink</h1>
+				<ul>
+					<li><a href="https://reddit.com/r/unixporn">unixporn</a></li>
+					<li><a href="https://reddit.com/r/vim">vim</a></li>
+					<li><a href="https://pc.textmod.es">textmod.es</a></li>
+					<li><a href="http://home.ekosystem.org">ekosystem</a></li>
+					<li><a href="https://tshirtslayer.com">battlejackets</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>social</h1>
+				<ul>
+					<li><a href="https://nixers.net">nixers</a></li>
+					<li><a href="https://facebook.com">koobface</a></li>
+					<li><a href="https://twitter.com">twooper</a></li>
+					<li><a href="https://mastodon.social">mastodon</a></li>
+					<li><a href="https://cyberia.is">cyberia</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>friends</h1>
+				<ul>
+					<li><a href="http://z3bra.org">z3bra</a></li>
+					<li><a href="https://lyngvaer.no">dcat</a></li>
+					<li><a href="http://venam.nixers.net">venam</a></li>
+					<li><a href="https://pluvi.us">apk</a></li>
+					<li><a href="https://neeasade.net">neeasade</a></li>
+					<li><a href="http://mrdoob.com/">mr. doob</a></li>
+					<li><a href="https://soulwire.co.uk">soulwire</a></li>
+					<li><a href="http://zehfernando.com">zeh</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>personal hype</h1>
+				<ul>
+					<li><a href="http://xero.nu">xero.nu</a></li>
+					<li><a href="http://0w.nz">0w.nz</a></li>
+					<li><a href="http://fontvir.us">fontvir.us</a></li>
+					<li><a href="http://twitter.com/fontvirus">@fontvirus</a></li>
+					<li><a href="http://keybase.io/xero">keybase</a></li>
+				</ul>
+			</section>
+		</article>
+	</body>
+</html>
