@@ -1,8 +1,32 @@
 # startpage
 
-## about
-a startpage is the page you first see when you open your browser. by default your browser will usually show you a built-in "new tab" page, or your homepage (if defined).
+## what?
+
+a startpage is the page you first see when you open your browser. by default your browser will usually show you a built-in "new tab" page, or your homepage (if defined). i wanted to rely less on browser based bookmarks and create my own method to quickly access my most commonly viewed linx.
+
+## goals
+
+* create a personal custom startpage
+* all assets (fonts, images, css, etc) are embedded directly into the source
+* responsive sizing
+* keyboard centric
+* dynamically searchable
+* easily hosted and updated (either locally or remotely)
 
 ## notes
 
+this targets the newest version of chromium, since that's what i use (with some of the [inox patches](https://git.io/inox)). i've also tested against the newest firefox and it should work fine with other modern browsers.
+
+if you plan to use this file locally, you'll need the [new tab redirect](https://goo.gl/cew899) extension. use the `file:///home/x0/dotfiles/startpage.html` address syntax.
+
 the font base64 encoded and embedded into the source is the classic amiga font [topaz](https://trueschool.se/html/fonts.html) - more download options are available [here](https://github.com/rewtnull/amigafonts).
+
+these are not (all) the bookmarks i actually use. i tried to amass a nice large collection for demo purposes.
+
+since there are no external libs, i used `$` to define my dom manipulation functions and `_` for the link library. if you plan to fork and extend this with either jquery or underscore.js please take note.
+
+## license
+
+![kopimi logo](https://gist.githubusercontent.com/xero/cbcd5c38b695004c848b73e5c1c0c779/raw/6b32899b0af238b17383d7a878a69a076139e72d/kopimi-sm.png)
+
+[kopimi](https://kopimi.com)! in the spirit of _freedom of information_, i encourage you to fork, modify, change, share, or do whatever you like with this project!
