@@ -230,16 +230,43 @@
 					},
 					val() {
 						return context.querySelector(selector).value
+					},
+					on(event, handler, options) {
+						this.elements.forEach(element => {
+							element.addEventListener(event, handler, options)
+						})
+						return this
 					}
 				}
 			};
+			function search() {
+				const find = $("#find").val();
+				const results = [{
+					"id": "filtered",
+					"_": []
+				}];
+				let found = false;
+				if(find.length == 0) {
+					$("#main").clear();
+					build(_);
+					return false;
+				}
+				_.filter((x) => {
+					x._.filter((xx) => {
+						if(xx.lbl.indexOf(find) !=-1 || xx.url.indexOf(find) !=-1) {
+							 results[0]._.push({"url": xx.url, "lbl": xx.lbl});
+							found = true;
+						}
+					});
+				});
+				$("#main").clear();
+				build(found ? results : _);
+			}
 			function build(j) {
 				for(const x of j) {
 					let node = `<section><h1>${x.id}</h1><ul>`;
 					for(const l of x._) {
-						if(!l.hidden) {
-							node += `<li><a href="${l.url}">${l.lbl}</a></li>`
-						}
+						node += `<li><a href="${l.url}">${l.lbl}</a></li>`
 					}
 					node += `</ul></section>`;
 					$("#main").html(node);
@@ -247,7 +274,7 @@
 			}
 			(() => {
 				build(_);
-				$("#find").focus();
+				$("#find").on('keypress', search).on('change', search).focus();
 			})();
 		</script>
 	</body>
