@@ -152,8 +152,12 @@
 						"url": "https://mastodon.social",
 						"lbl": "mastodon",
 					},{
+						"url": "https://2f30.org",
+						"lbl": "division by zero"
+					},{
 						"url": "http://cyberia.is",
-						"lbl": "cyberia"
+						"lbl": "cyberia",
+						"hidden": "true"
 					}]
 				},{
 					"id": "friends",
@@ -266,7 +270,9 @@
 				for(const x of j) {
 					let node = `<section><h1>${x.id}</h1><ul>`;
 					for(const l of x._) {
-						node += `<li><a href="${l.url}">${l.lbl}</a></li>`
+						if(!l.hidden) {
+							node += `<li><a href="${l.url}">${l.lbl}</a></li>`
+						}
 					}
 					node += `</ul></section>`;
 					$("#main").html(node);
