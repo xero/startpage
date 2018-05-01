@@ -1,6 +1,6 @@
 # startpage
 
-a startpage is the page you first see when you open your browser. by default your browser will usually show you a built-in "new tab" page, or your homepage (if defined). i wanted to rely less on browser based bookmarks and create my own method to quickly access my most commonly viewed linx. typing in the search box (with the all seeing eye) will live filter the results and reveal hidden linx. use `tab` then `enter` to select and navigate to urls. the default submit action on the searchbox will send your query to google (this easily overridden to the search engine of your choice by adjusting the form action value).
+a startpage is the page you first see when you open your browser. by default your browser will usually show you a built-in "new tab" page, or your homepage (if defined). i wanted to rely less on browser based bookmarks and create my own method to quickly access my most commonly viewed linx. typing in the search box (with the all seeing eye) will live filter the results and reveal hidden linx. use `tab` then `enter` to select and navigate to urls. the default submit action on the searchbox will send your query to google (this is easily overridden to the search engine of your choice by adjusting the form action value).
 
 ## preview (nord theme)
 
