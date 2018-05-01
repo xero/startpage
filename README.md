@@ -4,6 +4,10 @@
 
 a startpage is the page you first see when you open your browser. by default your browser will usually show you a built-in "new tab" page, or your homepage (if defined). i wanted to rely less on browser based bookmarks and create my own method to quickly access my most commonly viewed linx.
 
+## preview
+
+![startpage preview](https://gist.githubusercontent.com/xero/cbcd5c38b695004c848b73e5c1c0c779/raw/17a66428a511943ccf80d9ed4d21a2b694f57ccf/start-page-preview.png)
+
 ## goals
 
 * create a personal custom startpage
@@ -12,6 +16,12 @@ a startpage is the page you first see when you open your browser. by default you
 * keyboard centric
 * dynamically searchable
 * easily hosted and updated (either locally or remotely)
+
+## files
+
+* startpage.html - the main project implementation
+* startpage-nord.html - a colorscheme variant inspired by [nord](https://arcticicestudio.github.io/nord/)
+* startpage-static.html - the non-javascript version
 
 ## notes
 
