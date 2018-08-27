@@ -30,7 +30,7 @@ if you plan to use this file locally, you'll need the [new tab redirect](https:/
 
 the font base64 encoded and embedded into the source is the classic amiga font [topaz](https://trueschool.se/html/fonts.html) - more download options are available [here](https://github.com/rewtnull/amigafonts).
 
-these are not (all) the bookmarks i actually use. i tried to amass a nice large collection for demo purposes.
+these are not {all,} the bookmarks i actually use. i tried to amass a nice large collection for demo purposes to showcase it's dynamic sizing.
 
 since there are no external libs, i used `$` to define my dom manipulation functions and `_` for the link library. if you plan to fork and extend this with either jquery or underscore.js please take note.
 
