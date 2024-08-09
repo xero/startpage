@@ -27,7 +27,9 @@ prepend your search with a supported `!bang` to search somewhere other that goog
 
 ## themes
 
-the default colorscheme is darkmode. to apply nord, set that class on the body tag: `<body class="nord">`
+the default colorscheme is darkmode. to apply nord, set that class on the body tag:
+
+`<body class="nord">`
 
 ## features
 
@@ -41,18 +43,20 @@ the default colorscheme is darkmode. to apply nord, set that class on the body t
 
 ## files
 
-* startpage.html - the main project implementation
-* startpage-static.html - the non-javascript version
+* [startpage.html](startpage.html) - the main project implementation
+* [startpage-static.html](startpage-static.html) - a simple non-javascript version
 
 ## notes
 
-[homepage for safari](https://apps.apple.com/gb/app/homepage-for-safari/id6481118559) and [new tab redirect for chrome](https://goo.gl/cew899) are the new tab extensions i've tested. if you plan host the startpage locally, use the `file:///home/x0/dotfiles/startpage.html` address syntax.
+[homepage for safari](https://apps.apple.com/gb/app/homepage-for-safari/id6481118559) and [new tab redirect for chrome](https://goo.gl/cew899) are the new tab extensions i've tested. if you plan host the startpage locally, use the `file:///home/x0/startpage.html` address syntax.
 
-the font base64 encoded and embedded into the source is the free/open source [hack](https://github.com/blinksh/patched-fonts/blob/5fb174fb75987e735fda8f0643fd76911f21fa97/Hack%20Nerd%20Font.css) patched from the nerd fonts collection.
+the font, base64 encoded and embedded into the css, is the free/open source [hack](https://github.com/blinksh/patched-fonts/blob/5fb174fb75987e735fda8f0643fd76911f21fa97/Hack%20Nerd%20Font.css) patched from the nerd fonts collection.
 
 these are not `{all,}` the bookmarks i actually use. i tried to amass a nice large collection for demo purposes to showcase it's dynamic sizing, and shoutout some friends!
 
-since there are no external libs, i used `$` to define my dom manipulation functions and `_` for the link library. if you plan to fork and extend this with either jquery or underscore.js please take note. _but ewww gross._
+since there are no external libs, i used `$` to define my dom manipulation functions and `_` for the link library. if you plan to fork and extend this with either jquery or underscore.js please take note.
+
+_but ewww gross._
 
 ## license
 
