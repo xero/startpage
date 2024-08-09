@@ -1,12 +1,29 @@
 # startpage
 
-a startpage is the page you first see when you open your browser. by default your browser will usually show you a built-in "new tab" page, or your homepage (if defined). i wanted to rely less on browser based bookmarks and create my own method to quickly access my most commonly viewed linx. typing in the search box (with the all seeing eye) will live filter the results and reveal hidden linx. use `tab` then `enter` to select and navigate to urls. the default submit action on the searchbox will send your query to google (this is easily overridden to the search engine of your choice by adjusting the form action value).
+a startpage is the page you first see when you open your browser. by default your browser will usually show you a built-in "new tab" page, or your homepage (if defined). i wanted to rely less on browser based bookmarks and create my own method to quickly access my most commonly viewed linx. typing in the search box (with the all seeing eye) will live filter the results and reveal hidden linx. use `tab` then `enter` to select and navigate to urls. the default submit action on the searchbox will send your query to google (this is easily overridden to the search engine of your choice by adjusting the form action value). the search box also features `!bang` syntax to search different providers (e.g. google, github, shodan, greynoise, etc).
 
 ## preview (nord theme)
 
 ![startpage preview](https://gist.githubusercontent.com/xero/cbcd5c38b695004c848b73e5c1c0c779/raw/17a66428a511943ccf80d9ed4d21a2b694f57ccf/start-page-preview.png)
 
-## goals
+## !bangs
+
+prepend your search with a supported `!bang` to search somewhere other that google.
+
+ * `!a` amazon product search
+ * `!bc` bandcamp search
+ * `!e` ebay search
+ * `!gh` github code search
+ * `!gn` greynoise query
+ * `!h` http status code docs
+ * `!i` google images search
+ * `!s` shodan snooping
+ * `!t` google translate
+ * `!w` wikipedia search
+ * `!y` youtube search
+ * `!yh` youtube history search
+
+## features
 
 * create a personalized startpage
 * all assets (fonts, images, css, etc) are embedded directly into the source
@@ -19,20 +36,17 @@ a startpage is the page you first see when you open your browser. by default you
 ## files
 
 * startpage.html - the main project implementation
-* startpage-nord.html - a colorscheme variant inspired by [nord](https://arcticicestudio.github.io/nord/)
 * startpage-static.html - the non-javascript version
 
 ## notes
 
-this targets the newest version of chromium, since that's what i use (with some of the [inox patches](https://git.io/inox)). i've also tested against the newest firefox and it should work fine with other modern browsers.
+[homepage for safari](https://apps.apple.com/gb/app/homepage-for-safari/id6481118559) and [new tab redirect for chrome](https://goo.gl/cew899) are the new tab extensions i've tested. if you plan host the startpage locally, use the `file:///home/x0/dotfiles/startpage.html` address syntax.
 
-if you plan to use this file locally, you'll need the [new tab redirect](https://goo.gl/cew899) extension. use the `file:///home/x0/dotfiles/startpage.html` address syntax.
+the font base64 encoded and embedded into the source is the free/open source [hack](https://github.com/blinksh/patched-fonts/blob/5fb174fb75987e735fda8f0643fd76911f21fa97/Hack%20Nerd%20Font.css) patched from the nerd fonts collection.
 
-the font base64 encoded and embedded into the source is the classic amiga font [topaz](https://trueschool.se/html/fonts.html) - more download options are available [here](https://github.com/rewtnull/amigafonts).
+these are not `{all,}` the bookmarks i actually use. i tried to amass a nice large collection for demo purposes to showcase it's dynamic sizing, and shoutout some friends!
 
-these are not {all,} the bookmarks i actually use. i tried to amass a nice large collection for demo purposes to showcase it's dynamic sizing.
-
-since there are no external libs, i used `$` to define my dom manipulation functions and `_` for the link library. if you plan to fork and extend this with either jquery or underscore.js please take note.
+since there are no external libs, i used `$` to define my dom manipulation functions and `_` for the link library. if you plan to fork and extend this with either jquery or underscore.js please take note. _but ewww gross._
 
 ## license
 
