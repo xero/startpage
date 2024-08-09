@@ -8,6 +8,12 @@ a startpage is the page you first see when you open your browser. by default you
 
 ![nord preview](https://raw.githubusercontent.com/xero/startpage/main/startpage-nord.png)
 
+## demos
+
+ * [startpage](https://xero.github.io/startpage/)
+ * [nord theme](https://xero.github.io/startpage/startpage-nord.html)
+ * [static version](https://xero.github.io/startpage/startpage-static.html)
+
 ## !bangs
 
 prepend your search with a supported `!bang` to search somewhere other that google.
