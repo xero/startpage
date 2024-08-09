@@ -2,9 +2,11 @@
 
 a startpage is the page you first see when you open your browser. by default your browser will usually show you a built-in "new tab" page, or your homepage (if defined). i wanted to rely less on browser based bookmarks and create my own method to quickly access my most commonly viewed linx. typing in the search box (with the all seeing eye) will live filter the results and reveal hidden linx. use `tab` then `enter` to select and navigate to urls. the default submit action on the searchbox will send your query to google (this is easily overridden to the search engine of your choice by adjusting the form action value). the search box also features `!bang` syntax to search different providers (e.g. google, github, shodan, greynoise, etc).
 
-## preview (nord theme)
+## previews
 
-![startpage preview](https://gist.githubusercontent.com/xero/cbcd5c38b695004c848b73e5c1c0c779/raw/17a66428a511943ccf80d9ed4d21a2b694f57ccf/start-page-preview.png)
+![startpage preview](https://raw.githubusercontent.com/xero/startpage/main/startpage-preview.png)
+
+![nord preview](https://raw.githubusercontent.com/xero/startpage/main/startpage-nord.png)
 
 ## !bangs
 
@@ -22,6 +24,10 @@ prepend your search with a supported `!bang` to search somewhere other that goog
  * `!w` wikipedia search
  * `!y` youtube search
  * `!yh` youtube history search
+
+## themes
+
+the default colorscheme is darkmode. to apply nord, set that class on the body tag: `<body class="nord">`
 
 ## features
 
